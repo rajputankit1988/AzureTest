@@ -8,8 +8,7 @@ steps:
     inputs:
       SourceFolder: deployment
       Contents: '*.json'
-      TargetFolder: $(build.artifactstagingdirectory)/Templates
-  - task: Npm@1
+      - task: Npm@1
     displayName: 'npm custom'
     inputs:
       command: custom
